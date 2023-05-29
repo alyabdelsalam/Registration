@@ -20,4 +20,9 @@ public class StudentService {
         return studentRepository.findAll();
 
     }
+
+    public void addNewStudent(Student student){
+        studentRepository.save(student);
+
+    }
 }
